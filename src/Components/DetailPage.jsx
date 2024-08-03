@@ -14,10 +14,10 @@ function DetailPage() {
     const icons = location.state.icons;
     console.log(location.state.githubLink[0]);
     return (
-        <div className='w-full h-[43.5rem] overflow-hidden my-10  flex flex-col  justify-start '>
+        <div className='w-full  xl:h-[43.5rem] my-10  flex flex-col  justify-start h-full'>
             <motion.h3 initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.3, duration: 0.5 }} className='text-white text-2xl font-bold tracking-tight lg:text-6xl mb-5'>{title}</motion.h3>
             <div className='flex flex-col xl:flex-row gap-10'>
-                <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }} className='relative my-5 overflow-hidden lg:overflow-auto h-full' style={{ flex: "0 0 65%" }}>
+                <motion.div initial={{ x: -100, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.6, duration: 0.5 }} className='relative my-5 overflow-hidden  lg:overflow-auto ' style={{ flex: "0 0 65%" }}>
                     <ImageSlider images={images} />
                 </motion.div>
                 <div className='font-montserrat text-lg leading-8
